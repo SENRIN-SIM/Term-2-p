@@ -1,0 +1,14 @@
+@mixin center{
+    background-color: rgb(9, 9, 9);
+    width: 1000px;
+    // height: auto;
+}
+@mixin center-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(181, 197, 11);
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}

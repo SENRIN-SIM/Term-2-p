@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Python"
+		},
+		{
+			"path": "../STUDENT"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "START-CODE"
+	}
+}

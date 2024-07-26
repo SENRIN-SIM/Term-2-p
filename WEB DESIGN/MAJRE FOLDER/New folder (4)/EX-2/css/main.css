@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+}
+nav{
+    flex: 1;
+    background-color: aqua;
+}
+.container{
+    flex: 2;
+    background-color: aquamarine;
+    display: flex;
+}
+.box-left{
+    flex: 1;
+    background-color: blueviolet;
+}
+.box-reght{
+    flex: 1;
+    background-color: cadetblue;
+}
+footer{
+    flex: 1;
+    background-color: aqua;
+}

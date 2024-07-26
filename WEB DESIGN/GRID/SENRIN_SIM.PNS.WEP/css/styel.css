@@ -1,0 +1,802 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+nav{
+    width: 100%;
+    min-height: 80px;
+    box-shadow: 0 0 2em;
+    background-color: #f6f7f7;
+    margin: auto;
+    position: sticky;
+    z-index: 10;
+    top: 1px;
+}
+.nav-item{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    min-height: 80px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 190px;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    width: 60%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    display: flex;
+}
+.menu a{
+    width: 20%;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+    color: blue;
+}
+.menu a:hover{
+    box-shadow: 0 0 1em rgb(19, 192, 125);
+    transition: 0.5s;
+    font-size: 150%;
+    color: #100f0f;
+    border-radius: 5px;
+    background-color: #fff;
+}
+section{
+    width: 100%;
+}
+header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://lh3.googleusercontent.com/p/AF1QipMWXWHMGWhDy_zvqA5pwIFmxUl7dIxI0StL0fud=s680-w680-h510);
+    background-repeat: no-repeat;
+    background-size: cover;    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.title-head{
+    width: 40%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.601);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 2em white;
+}
+.title-head h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.title-head p{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+#value-section{
+    width: 1200px;
+    min-height: 100vh;
+    margin: auto;
+}
+.vu-title{
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+}
+.value-title{
+    width: 95%;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 30px;
+}
+.detail-value{
+    width: 95%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.card{
+    width: 19%;
+    min-height: 60vh;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: teal;
+}
+.icons-value{
+    min-height:22vh;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.icons-value img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 2em #fff;
+}
+.detail{
+    width: 100%;
+    min-height: 38vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+.detail h2{
+    margin-bottom: 20px;
+}
+#canteen-section{
+    width: 1200px;
+    min-height: 150vh;
+    margin: auto;
+}
+.canteen-title{
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.food{
+    width: 80%;
+    min-height: 150vh;
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.food-card{
+    width: 45%;
+    min-height: 70vh;
+    background-color: aliceblue;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
+    box-shadow: 0 0 1em rgb(19, 133, 137);
+}
+.describ{
+    width: 45%;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s;
+}
+.food .food-card .food-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transition: 0.5s;
+}
+.food-card:hover .food-img img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    top: 20px;
+    left: 33%;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    transition: 0.5s;
+}
+.food-card:hover .food-img img{
+    box-shadow: 0 0 2em rgb(177, 185, 182);
+    border: 4px solid white;
+}
+.schedule{
+    width: 100%;
+    min-height: 60vh;
+}
+.sd-canteen{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+table{
+    width: 100%;
+    min-height: 40vh;
+    border-collapse: collapse;
+}
+tr, th, td{
+    border: 1px solid;
+}
+th:nth-child(even){
+    background-color: rgb(144, 144, 237);
+    border: 1px solid;
+}
+tr:nth-child(even){
+    background-color: gainsboro;
+}
+.sd-canteen p{
+    padding-left: 10px;
+    margin-right: auto;
+}
+#sport-cection{
+    width: 1200px;
+    min-height: 100vh;
+    background-color: rgba(137, 143, 143, 0.15);
+    margin: auto;
+}
+.sport-title{
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #fff;
+}
+.sport-card{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 em;
+}
+.sp-card{
+    width: 19%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.sp-card:hover{
+    box-shadow: 0 0 2em pink ;
+}
+.sp-card .imgcover img{
+    width: 100%;
+    height: 300px;
+    transition: 0.5;
+    position: relative;
+}
+.sp-card:hover .imgcover img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    transition: 0.5;
+    filter: blur(5px);
+}
+.imgcover::before{
+    content: '';
+    height: 100%;width: 100%;
+    bottom: -240px;
+    position: absolute;
+    transform: 0.5s;
+    z-index: 1;
+    background: linear-gradient(0deg,#748383 50%,transparent);
+}
+.sp-card:hover .imgcover::before{
+    bottom: 0px;
+    transition: 0.5s;
+}
+.sp-card .sport-detail{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: -160px;
+    width: 80%;
+    padding-left: 10px;
+    transition: 0.5s;
+    color: #fff;
+}
+.sport-detail h1{
+    font-size:30px;
+    margin-bottom: 10px;
+    color: rgb(241, 173, 14);
+}
+.sp-card:hover .sport-detail{
+    bottom: 10px;
+}
+#aerobic-section{
+    width: 1200px;
+    min-height: 120vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.aerobic-title{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.aerobic-main{
+    min-height: 100vh;
+    display: flex;
+    background-color: rgb(212, 225, 220);
+}
+.aerobic-img{
+    width: 60%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aerobic-img img{
+    width: 40%;
+    height: 200px;
+    border-radius: 10px;
+    border: 10px solid white;
+}
+.aerobic-detial{
+    width: 40%;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+#contact{
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+    background-color: chartreuse;
+}
+.Contact-titile{
+    min-height: 20vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.main-contact{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url(https://www.passerellesnumeriques.org/wp-content/uploads/2016/01/PNC_students_outside_classroom_2015-99.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 30%;
+    min-height: 70vh;
+    background-color: rgba(246, 247, 252, 0.531);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0 0 2em rgb(84, 78, 78);
+}
+form img{
+    width: 100px;
+    height: 96px;
+}
+.user-name{
+    width: 90%;
+}
+.user-name input{
+    height: 25px;
+    width: 49%;
+    color: black;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: rgb(211, 225, 225);
+}
+[type=email],
+[type=password]
+{
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: rgb(211, 225, 225);
+}
+.button{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.button h3{
+    width: 50%;
+    color: rgb(40, 38, 38);
+    border-bottom: 2px solid;
+}
+button{
+    width: 50%;
+    border-radius: 15px;
+    background-color: rgb(211, 195, 15);
+    color: #fff;
+    border: none;
+}
+button:hover{
+    box-shadow: 0 0 2em white;
+}
+input:hover{
+    box-shadow: 0 0 1em white;
+}
+form button:hover{
+    cursor: pointer;
+}
+#map-cection{
+    width: 100%;
+    min-height: 100vh;
+}
+.map-tittle{
+    min-height: 20vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.google-map iframe{
+    width: 100%;
+    min-height: 80vh;
+    background-repeat: no-repeat;
+}
+footer{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #100f0f;
+    color: #fff;
+}
+.ourvalue,
+.ourmajor,
+.ourdepartment,
+.oursocialmedia
+{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ourvalue ul li,
+.ourmajor ul li,
+.ourdepartment ul li
+{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.ourvalue h3,
+.ourmajor h3,
+.ourdepartment h3{
+    width: 180px;
+}
+.oursocialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.oursocialmedia ul li{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.oursocialmedia ul li img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+ul li{
+    list-style: none;
+}
+@media(min-width:768px) and (max-width:1240px){
+    nav{
+        width: 100%;
+        min-height: 60px;
+    }
+    .logo{
+        min-height: 80px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        width: 70%;
+    }
+    .menu a{
+        width: 20%;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100%;
+        font-family: sans-serif;
+        text-decoration: none;
+        transition: 0.5s;
+        color: black;
+    }
+    header{
+        width: 100%;
+        height: 10vh;
+    }
+    #value-section{
+        width: 100%;
+        min-height: 80vh;
+        margin: auto;
+    }
+    .vu-title{
+        width: 100%;
+        min-height: 15vh;
+        display: flex;
+        justify-content: center;
+    }
+    .value-title{
+        width: 50%;
+        margin: auto;
+        min-height: 15vh;
+    }
+    .detail-value{
+        width: 95%;
+        min-height: 85vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .card{
+        width: 90%;
+        height: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+        border: none;
+        padding: 5px;
+        margin: 10px;
+        background-color: rgb(127, 143, 143);
+    }
+    .icons-value{
+        min-height:22vh;
+        width: 100%;
+        align-items: end;
+        justify-content: center;
+    }
+    .icons-value img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 0 2em #fff;
+    }
+    .detail{
+        width: 100%;
+        min-height: 30vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+    }
+    .detail h2{
+        margin-bottom: 20px;
+    }
+    #canteen-section{
+        width: 100%;
+    }
+    .sport-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sp-card{
+        width: 30%;
+        height: 250px;
+        margin: 5px;
+    }
+    #sport-cection{
+        width: 100%;
+    }
+
+    #aerobic-section{
+        width: 100%;
+    }
+    form{
+        width: 70%;
+        min-height: 70vh;
+    }
+}
+@media(max-width:768px){
+    nav{
+        width: 100%;
+        min-height: 60px;
+    }
+    .logo{
+        min-height: 80px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        width: 140px;
+        margin-left: -14px;
+    }
+    .menu{
+        width: 80%;
+    }
+    .menu a{
+        width: 100%;
+        min-height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70%;
+        font-family: sans-serif;
+        text-decoration: none;
+        transition: 0.5s;
+        color: black;
+    }
+    header{
+        width: 100%;
+        height: 10vh;
+    }
+    header .title-head{
+        width: 90%;
+    }
+    #value-section{
+        width: 100%;
+        min-height: 80vh;
+        margin: auto;
+    }
+    .vu-title{
+        width: 100%;
+        min-height: 15vh;
+        display: flex;
+        justify-content: center;
+    }
+    .value-title{
+        width: 50%;
+        margin: auto;
+        min-height: 15vh;
+    }
+    .detail-value{
+        width: 95%;
+        min-height: 85vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .card{
+        width: 90%;
+        height: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+        border: none;
+        padding: 5px;
+        margin: 10px;
+        background-color: rgb(127, 143, 143);
+    }
+    .icons-value{
+        min-height:22vh;
+        width: 100%;
+        align-items: end;
+        justify-content: center;
+    }
+    .icons-value img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #fff;
+        box-shadow: 0 0 2em #fff;
+    }
+    .detail{
+        width: 100%;
+        min-height: 30vh;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+    }
+    .detail h2{
+        margin-bottom: 20px;
+    }
+
+
+    #canteen-section{
+        width: 100%;
+    }
+    .Contact-titile{
+        justify-content: center;
+    }
+    .food{
+        width: 100%;
+    }
+    .food-card .describ{
+        justify-content: end;
+        padding-bottom: 25px;
+    }
+    .food-card{
+        width: 90%;
+        min-height: 10vh;
+        margin: 20px;
+    }
+
+
+    .sport-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sp-card{
+        width: 90%;
+        height: 250px;
+        margin: 5px;
+    }
+    #sport-cection{
+        width: 100%;
+    }
+
+    #aerobic-section{
+        width: 100%;
+    }
+    .aerobic-main{
+        flex-direction: column;
+    }
+    .aerobic-img{
+        width: 100%;
+    }
+    .aerobic-img img{
+        height: 160px;
+    }
+    .aerobic-detial{
+        width: 100%;
+    }
+    form{
+        width: 60%;
+        min-height: 70vh;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    form{
+        width: 80%;
+    }
+    .ourvalue,
+    .ourmajor,
+    .ourdepartment,
+    .oursocialmedia{
+        width: 48%;
+        margin-bottom:10px ;
+    }
+}

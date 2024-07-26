@@ -1,0 +1,80 @@
+body {
+  margin: 10px;
+  font-family: Verdana;
+}
+
+.container {
+  border: 2px solid rgb(244, 89, 89);
+  display: flex;
+}
+.container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  border: 2px solid rgb(10, 73, 246);
+  flex-wrap: wrap;
+}
+
+/* 1 */
+/* .services{
+  margin-left: auto;
+} */
+
+/* 2 */
+/* .about{
+  margin-left: auto;
+} */
+
+/* 3 */
+/* .container>div{
+  flex: 1;
+} */
+
+/* 4 */
+/* .home, .about{
+  flex: 1;
+}
+.services{
+  flex: 2;
+} */
+
+/* 5 */
+/* .home {
+  flex: 1;
+}
+.about {
+  flex: 2;
+}
+.services {
+  flex: 3;
+} */
+
+/* 6 */
+/* .container>div{
+  flex-basis: 300px;
+}
+.about{
+  flex-shrink: 0;
+} */
+
+/* 7 */
+/* .container>div {
+  flex-basis: 300px;
+}
+.abou{
+  flex-grow: 1;
+} */
+
+/* 8 */
+/* .container > div {
+  flex-basis: 200px;
+}
+
+.about {
+  flex-grow: 1;
+}
+
+.services {
+  flex-grow: 2;
+} */
+

@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+    display: flex; 
+    height: 100vh;
+    flex-direction: column;
+}
+nav{
+    background-color: aqua;
+    flex:1;
+}
+.container{
+    background-color: rgb(74, 163, 163);
+    flex:2;
+}
+footer{
+    background-color: rgb(51, 128, 128);
+    flex:1;
+}

@@ -1,0 +1,58 @@
+@import "../main";
+.card{
+    width: 22%;
+    border-bottom: 2px solid;
+    background-color: #fff;
+    @include responsive(tablet){
+        width: 45%;
+    }
+    @include responsive(phone){
+        width: 85%;
+    }
+}
+.card-top{
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    p{
+        position: absolute;
+        right: 4%;
+        padding: 10px;
+        background-color: yellow;
+        font-weight: bold;
+    }
+}
+.card-botom{
+    width: 100%;
+    padding: 20px 10px;
+    .describe{
+        strong{
+            background-color: rgb(176, 29, 29);
+            color: #fff;
+            padding: 1px 10px;
+        }
+    }
+    .pric-buy{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        margin-top: auto;
+        strong{
+            font-weight: bold;
+            color: $main-color;
+        }
+        form{
+            :hover{
+                color: #d41b1b;
+            }
+            button{
+                padding: 10px 20px;
+                border: none;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Table2"
+		},
+		{
+			"path": "../../Table"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Table"
+	}
+}

@@ -1,0 +1,409 @@
+@import "_main";
+@import "./components/button";
+
+* {
+    @include univer;
+}
+
+body {
+    @include body;
+}
+
+@import "./components/nav";
+
+.menu ul li:nth-child(2) a {
+    color: $main-color;
+    border-bottom: 5px solid;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 0px 50px 0px 50px;
+    justify-content: space-between;
+
+    .blur {
+        display: none;
+    }
+
+    .head-top {
+        flex: 4;
+        display: flex;
+
+        .head-top-left {
+            flex: 2;
+            @include responsive(phone) {
+                display: block;
+                position: absolute;
+                left: 5%;
+            }
+            h2{
+                color: $main-color;
+                font-weight: bold;
+                text-transform: uppercase;
+                @include responsive(phone) {
+                }
+            }
+
+            form {
+                button {
+                    padding: 5px 20px;
+                    border: none;
+                    background-color: yellow;
+                    font-size: 17px;
+                    transition: 0.5s;
+                    color: black;
+                    
+
+                    &:hover {
+                        background-color: $main-color;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .head-top-right {
+            flex: 3;
+            background-image: url(../img/service-header-image-removebg-preview\ \(1\).png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    @include responsive(tablet) {
+        position: relative;
+        background-image: url(../img/service-header-image-removebg-preview\ \(1\).png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .blur {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #0000004f;
+            z-index: -1;
+        }
+
+        .head-top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .head-top-left {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                h1 {
+                    color: $text-color;
+                }
+            }
+        }
+
+        .head-bottom,
+        .head-top-right {
+            display: none;
+        }
+    }
+}
+
+.head-top-right {
+    img {
+        width: 100%;
+    }
+}
+
+.head-bottom {
+    h3 {
+        padding: 50px 0px;
+        font-size: 30px;
+    }
+}
+
+//   ===================  
+.container {
+    padding: 50px 50px;
+    background-color: $main-color;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include responsive(phone) {
+        justify-content: center;
+    }
+
+    .content01 {
+        &:hover {
+            position: relative;
+            box-shadow: 0px 16px 60px 0px rgba(0, 0, 0, 0.176);
+            transition: 0.5s;
+
+            .describe {
+                font-size: 18px;
+            }
+        }
+
+        text-align: center;
+
+        @include responsive(tablet) {
+            justify-content: space-around;
+        }
+
+        padding: 0px 10px;
+        transition: 0.5s;
+
+        img {
+            border-radius: 50%;
+            position: relative;
+            margin-top: 20px;
+
+            @include responsive(tablet) {
+                border-radius: 10%;
+            }
+
+            @include responsive(phone) {
+                width: 300px;
+                border-radius: 10%;
+            }
+        }
+
+        .describe {
+            padding: 20px 0px;
+            text-align: center;
+            position: relative;
+
+            strong {
+                color: #fff;
+            }
+        }
+        
+    }
+}
+
+.sale-produce {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+    @include responsive(phone){
+        padding: 0px 20px;     
+    }
+}
+
+.pets {
+    padding-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.pet-food {
+    padding: 20px 0px;
+
+    h3 {
+        padding: 20px 0px 10px 0px;
+        border-bottom: 2px solid black;
+        color: $main-color;
+        background-color: #fff;
+    }
+}
+
+.pet-material {
+    padding: 20px 0px;
+
+    h3 {
+        padding: 20px 0px 10px 0px;
+        border-bottom: 2px solid black;
+        display: flex;
+        justify-content: end;
+        color: $main-color;
+        background-color: #fff;
+    }
+}
+
+.deteil {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    gap: 20px;
+
+    @include responsive(tablet) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include responsive(phone) {
+        flex-wrap: wrap;
+    }
+}
+
+@import "./components/card";
+
+.our-service {
+    .top {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        @include responsive(phone){
+            padding: 20px 20px;
+        }
+
+        img {
+            width: 48%;
+            border-radius: 10px;
+
+            @include responsive(phone) {
+                display: none;
+            }
+        }
+
+        .describe {
+            width: 48%;
+
+            @include responsive(phone) {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 50px;
+
+                @include responsive(phone) {
+                    color: $main-color;
+                }
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            form {
+                padding-top: 20px;
+                @include responsive(phone){
+                    display: flex;
+                    justify-content: end;
+                }
+
+                :hover {
+                    color: $main-color;
+                    box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+                }
+
+                button {
+                    padding: 10px 20px;
+                    background-color: yellow;
+                    border: none;
+                    font-size: 20px;
+                    
+                }
+            }
+        }
+    }
+
+    .center {
+        background-color: #fff;
+
+        .center-title {
+            text-align: center;
+            text-transform: uppercase;
+            color: $main-color;
+            padding: 20px 0px 0px 0px;
+
+        }
+
+        .card-box {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @include responsive(tablet) {
+                color: $main-color;
+            }
+            @include responsive(phone) {
+                color: $main-color;
+            }
+
+            .box {
+                width: 32%;
+                background-color: $main-color;
+                margin-bottom: 20px;
+                @include responsive(tablet) {
+                    width: 45%;
+                }
+                @include responsive(phone) {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                .detail {
+                    padding: 20px;
+                    text-align: center;
+                    color: #fff
+                }
+
+                h3 {
+                    padding: 10px;
+                }
+            }
+
+        }
+    }
+
+    .botom {
+        padding: 20px 50px;
+        @include responsive(phone){
+            padding: 20px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: $main-color;
+            border-bottom: 1px solid;
+        }
+
+        .botom-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .box {
+                width: 48%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #fff;
+                margin: 20px 0px;
+                border-radius: 5px;
+                @include responsive(phone) {
+                    width: 100%;
+                }
+
+                img {
+                    width: 25%;
+                    padding: 20px;
+                    @include responsive(tablet) {
+                        padding: 10px;
+                    }
+                    @include responsive(phone) {
+                        padding: 5px;
+                    }
+                }
+
+                p {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+@import "./components/footer";

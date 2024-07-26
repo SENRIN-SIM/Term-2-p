@@ -1,0 +1,114 @@
+@import "./main";
+* {
+    @include univer;
+}
+
+body {
+
+    background-image: url(/img/background-image.webp);
+    background-repeat: no-repeat;
+    background-size: $width $width;
+    height: 100vh;
+    @include responsive ('phone'){
+        margin:0px 20px 0px;
+    }
+    
+
+
+}
+
+.contact-us {
+    @include centersnojus;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+form {
+    @include centersnojus;
+    justify-content: center;
+    width: 70%;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    backdrop-filter: blur(3px);
+    color: $main-color;
+}
+
+label {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    color: $text-color;
+    
+    
+}
+
+input[type=text] {
+    @include type;
+    @include responsive ('phone'){
+        width: 180px;
+    }
+    
+}
+
+input[type=email] {
+    padding: 5px;
+    width: 405px;
+    @include responsive ('phone'){
+        width: 365px;
+    }
+}
+
+input[type=password] {
+    @include type;
+    @include responsive ('phone'){
+        width: 180px;
+    }
+}
+
+.tell-choice {
+    display: flex;
+    
+
+}
+
+textarea {
+    margin-top: 10px;
+    width: 405px;
+    height: 5vh;
+    @include responsive ('phone'){
+        width: 365px;
+    }
+}
+
+input[type=tel] {
+    @include type;
+    @include responsive ('phone'){
+        width: 180px;
+    }
+}
+
+select {
+    @include type;
+    @include responsive ('phone'){
+        width: 180px;
+    }
+
+}
+
+button {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid $main-color;
+    background:$main-color;
+    border-radius: 15px;
+    color: $text-button;
+    margin: 20px 70px 20px 100px;
+}

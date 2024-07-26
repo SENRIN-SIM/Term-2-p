@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../SENRIN_SIM-C1-S3-LIST-PRACTICE"
+		},
+		{
+			"path": "../HTML"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Food"
+		},
+		{
+			"path": "../New folder"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "New folder"
+	}
+}

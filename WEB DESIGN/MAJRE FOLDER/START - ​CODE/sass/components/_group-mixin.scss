@@ -1,0 +1,13 @@
+@mixin centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin textstyle {
+    text: {
+        transform: uppercase;
+        decoration: underline;
+        align: center;
+    }
+}

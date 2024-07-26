@@ -1,0 +1,390 @@
+@import "./mixins/responsive";
+@import "_main";
+
+* {
+    @include univer;
+}
+
+body {
+    @include body;
+}
+
+@import "./components/nav";
+
+.menu ul li:nth-child(1) a {
+    color: $main-color;
+    border-bottom: 5px solid;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: $size $size + 30;
+    background-color: $bg-color;
+
+    @include responsive('phone') {
+        padding: 0px 0px 150px 20px;
+
+    }
+
+    @include responsive('phone') {
+        background-image: url(../img/header-home.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+
+    }
+
+    .header-left {
+        h1 {
+            font-size: 50px;
+            text-transform: uppercase;
+            padding: 50px 0px;
+            color: $main-color;
+
+            @include responsive('tablet') {
+                padding: 20px 0px 50px 0px;
+            }
+
+            @include responsive('phone') {
+                padding: 20px 10px 150px 10px;
+                font-size: 40px;
+            }
+        }
+    }
+
+    button {
+        font-size: 40px;
+        border-radius: $size;
+        padding: $size;
+        text-transform: uppercase;
+        color: $text-color;
+        border: 5px solid $main-color;
+
+
+
+        @include responsive('tablet') {
+            border-radius: $size;
+            padding: 15px;
+            border: 3px solid $main-color;
+        }
+
+        @include responsive('phone') {
+            display: none;
+        }
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        border: 10px solid $main-color;
+
+        @include responsive('tablet') {
+            width: 40%;
+        }
+
+        @include responsive('phone') {
+            display: none;
+
+        }
+    }
+}
+
+// .home-container{
+
+// }
+.list-down {
+    background-color: $main-color;
+    display: flex;
+    justify-content: space-between;
+    padding: $size 50px;
+
+    @include responsive('phone') {
+        padding: $size 20px;
+    }
+
+    h3 {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-size: $size;
+        margin-bottom: 15px;
+
+        @include responsive('phone') {
+            font-size: 15px;
+        }
+    }
+
+    ul {
+        li {
+            :hover {
+                color: rgb(0, 229, 255);
+                border-bottom: 1px solid rgb(0, 229, 255);
+            }
+        }
+    }
+
+    a {
+        color: #fff;
+        font-size: $size;
+
+        @include responsive('phone') {
+            font-size: 13px;
+
+
+        }
+    }
+
+    a:hover {
+        color: yellow;
+        border-bottom: 2px solid yellow;
+    }
+}
+
+.content {
+    @include responsive('tablet') {
+        padding: $size 10px;
+    }
+}
+
+.produce {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.home-newpro {
+    padding: 0px 50px;
+
+    @include responsive(phone) {
+        padding: 0px 10px;
+    }
+}
+
+.title {
+    margin: 20px 0px;
+    display: flex;
+    background-color: #fff;
+    border-bottom: 5px solid $main-color;
+
+    h2 {
+        font-size: 40px;
+        padding: $size 0px 0px 0px;
+        font-weight: bold;
+        color: $main-color;
+
+        @include responsive('tablet') {
+            font-size: 28px;
+        }
+
+        @include responsive('phone') {
+            font-size: 23px;
+        }
+    }
+
+}
+
+
+
+.card {
+    display: flex;
+    justify-content: space-between;
+
+    @include responsive('tablet') {
+        flex-wrap: wrap;
+
+    }
+
+    @include responsive('phone') {
+        flex-wrap: wrap;
+    }
+}
+
+.new-produce-card {
+    width: 23%;
+
+    @include responsive('tablet') {
+        width: 48%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 15px 0px;
+    }
+
+    @include responsive('phone') {
+        width: 49%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.describe {
+    text-align: center;
+    padding: $size $size;
+    font-size: $size+5;
+    background-color: $main-color;
+
+    @include responsive('tablet') {
+        padding: 10px 10px;
+        font-size: $size;
+        width: 100%;
+
+    }
+
+    @include responsive('phone') {
+        padding: 5px 5px 5px 5px;
+        font-size: 15px;
+        width: 100%;
+
+    }
+
+    strong {
+        color: yellow;
+
+
+    }
+
+    p {
+        color: $text-button;
+    }
+
+}
+
+.sale-produce {
+    padding: 20px 50px;
+
+    @include responsive(phone) {
+        padding: 0px 10px;
+    }
+
+    display: flex;
+
+    h2 {
+        padding: $size 0px 0px 0px;
+        font-size: 40px;
+        font-weight: bold;
+        color: $main-color;
+        background-color: #fff;
+
+    }
+}
+
+.sale-title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #fff;
+    border-bottom: 5px solid $main-color;
+
+    @include responsive('phone') {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ;
+
+    }
+
+    h2 {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid #fff;
+        color: $main-color;
+        margin-left: 20px;
+
+        @include responsive('phone') {
+            font-size: 20px;
+        }
+
+        @include responsive('tablet') {
+            font-size: 30px;
+        }
+    }
+
+
+}
+
+.salepro-card {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+
+}
+
+.sale-card {
+    width: 23%;
+
+    @include responsive ('phone') {
+        width: 48%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    padding: $size 0px;
+    position: relative;
+
+    img {
+        width: 100%;
+
+        border: 3px solid #fff;
+    }
+
+    form {
+        position: absolute;
+        bottom: 15%;
+        left: 25%;
+        right: 25%;
+
+        @include responsive('phone') {
+            display: block;
+        }
+
+        button {
+            border: none;
+            color: #fff;
+            font-size: $size;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: $main-color;
+            padding: $size;
+
+            a {
+                color: $text-button;
+                cursor: pointer;
+            }
+
+            @include responsive('phone') {
+                font-size: 10px;
+                padding: 5px;
+                border-radius: 5px;
+                background: $main-color;
+                margin-bottom: 13px;
+            }
+
+            @include responsive('tablet') {
+                font-size: 15px;
+
+                padding: 5px;
+                border-radius: 5px;
+                background: $main-color;
+
+            }
+
+
+        }
+    }
+}
+
+
+@import "./components/footer";

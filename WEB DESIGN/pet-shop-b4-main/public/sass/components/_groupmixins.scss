@@ -1,0 +1,39 @@
+@mixin univer{
+    padding: 0;margin: 0;box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    outline: none;
+}
+@mixin body{
+    width: 100%;
+    height: auto;
+    background-color: #e4e4e0;
+}
+@mixin centers{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin centersnojus{
+    display: flex;
+    align-items: center;
+}
+@mixin space{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin center {
+    display: flex;
+    width: 50%;
+}
+@mixin hover{
+    :hover{
+        color: $main-color;
+        box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    }
+}
+@mixin type{
+    padding: 5px;
+    width: 200px;
+}

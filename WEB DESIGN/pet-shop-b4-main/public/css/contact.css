@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  outline: none;
+}
+
+body {
+  background-image: url(/img/background-image.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0px 20px 0px;
+  }
+}
+
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 100vh;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  color: #1A76D1;
+}
+
+label {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #2C2D3F;
+}
+
+input[type=text] {
+  padding: 5px;
+  width: 200px;
+}
+@media screen and (max-width: 600px) {
+  input[type=text] {
+    width: 180px;
+  }
+}
+
+input[type=email] {
+  padding: 5px;
+  width: 405px;
+}
+@media screen and (max-width: 600px) {
+  input[type=email] {
+    width: 365px;
+  }
+}
+
+input[type=password] {
+  padding: 5px;
+  width: 200px;
+}
+@media screen and (max-width: 600px) {
+  input[type=password] {
+    width: 180px;
+  }
+}
+
+.tell-choice {
+  display: flex;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 405px;
+  height: 5vh;
+}
+@media screen and (max-width: 600px) {
+  textarea {
+    width: 365px;
+  }
+}
+
+input[type=tel] {
+  padding: 5px;
+  width: 200px;
+}
+@media screen and (max-width: 600px) {
+  input[type=tel] {
+    width: 180px;
+  }
+}
+
+select {
+  padding: 5px;
+  width: 200px;
+}
+@media screen and (max-width: 600px) {
+  select {
+    width: 180px;
+  }
+}
+
+button {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #1A76D1;
+  background: #1A76D1;
+  border-radius: 15px;
+  color: white;
+  margin: 20px 70px 20px 100px;
+}/*# sourceMappingURL=contact.css.map */

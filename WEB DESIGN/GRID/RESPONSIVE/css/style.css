@@ -1,0 +1,41 @@
+*{
+    padding: 0;margin: 0;
+}
+body{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 2fr 2fr 2fr 2fr;
+    gap: 10px;
+}
+.responsive{
+    height: 350px;
+    background-color: rgb(6, 180, 93);
+    animation: mymove 5s infinite;
+}
+@media(max-width: 768px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .responsive{
+        background-color: rgb(4, 134, 173);
+    }
+}
+@media(max-width: 320px){
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .responsive{
+        background-color: teal;
+    }
+}
+@keyframes mymove {
+    from {background-color: black;}
+    to {background-color: pink;}
+    from{width: 1%;}
+    to{width: 100%;}
+    from{height: 1px;}
+    to{height: 350px;}
+    from{}
+  } 

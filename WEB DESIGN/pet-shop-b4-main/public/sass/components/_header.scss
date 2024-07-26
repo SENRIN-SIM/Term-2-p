@@ -1,0 +1,29 @@
+@import "variable";
+
+header {
+    display: flex;
+    padding: $nav-padding;
+    background: $header-about-color;
+    justify-content: space-between;
+
+}
+
+.header-left {
+    display: flex;
+    width: 45%;
+    align-items: flex-start;
+    flex-direction: column;
+    h1 {
+        color: $text-color ;
+        font-size: 55px;
+    }
+   
+}
+
+.header-right {
+    height: 40vh;
+    img {
+        height: 43vh;
+    }
+   
+}

@@ -1,0 +1,33 @@
+body{
+    margin: 10px;
+    padding: 10px;
+}
+#rin{
+    background-color: blue;
+    border-top: 10px solid pink;
+    border-bottom: 10px solid pink;
+    border-radius: 10px;
+    padding-bottom: 20px;
+
+}
+#sen{
+    margin: 0px 20px;
+    background-color: pink;
+    border-left:  5px dashed yellow;
+    border-right:  5px dashed yellow;
+}
+.sim{
+    margin: 0px 20px;
+    background-color: pink;
+    border-left:  5px dashed yellow;
+    border-right:  5px dashed yellow; 
+}
+#ss{
+    color: brown;
+}
+#s{
+    color: blue;
+}
+#sp{
+    color: darkgreen;
+}

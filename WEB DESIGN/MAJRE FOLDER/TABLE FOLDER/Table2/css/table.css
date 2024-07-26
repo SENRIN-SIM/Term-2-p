@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+table{
+    width: 100%;
+    background-color: rgb(213, 206, 216);
+    border-collapse: collapse;
+}
+th{
+    background-color: orange;
+    color: white;
+}
+tr, th, td{
+    border: 1px solid black;
+    padding: 10px;
+}

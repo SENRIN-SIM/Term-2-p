@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+}
+form{
+    width: 60%;
+    height: 95%;
+    margin: auto;
+    border: 15px solid grey;
+}
+.form-header{
+    width: 100%;
+    height: 12%;
+    background-color: rgb(230, 244, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-body{
+    width: 100%;
+    height:80%;
+    background-color: white;
+}
+.user-name{
+    height: 15%;
+    display: flex;
+    align-items: center;
+    color: aqua;
+}
+.user-firstname{
+    width: 50%;
+    padding-left: 15px;
+}
+.user-lastname{
+    width: 50%;
+    padding-left: 15px;
+}
+.user-email{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    color: aqua;
+}
+.user-email input{
+    width: 91%;
+    height: 50%;
+}
+.user-passwords{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    color: aqua;
+}
+.user-password{
+    width: 50%;
+    padding-left: 15px;
+}
+.user-confirm-password{
+    width: 50%;
+    padding-left: 15px;
+}
+.user-more-infos{
+    height: 14%;
+    display: flex;
+}
+.user-gender{
+    width: 50%;
+    font-size: 10px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(154, 71, 12);
+}
+.user-gender label{
+    color: aqua;
+}
+.user-hobby{
+    width: 50%;
+    font-size: 10px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(154, 71, 12);
+}
+.user-hobby label{
+    color: aqua;
+}
+.user-financial{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding-left: 15px;
+    color: aqua;
+}
+.user-financial select{
+    width: 93%;
+    height: 50%;
+}
+.user-income{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    color: aqua;
+    padding-left: 15px;
+}
+.user-income input{
+    width: 67%;
+}
+.user-income span{
+    height: 40%;width: 15%;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+.user-profile{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+.user-profile label{
+    color: aqua;
+}
+.user-profile input{
+    color: rgb(154, 71, 12);
+}
+.user-age{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center
+}
+.user-age label{
+    color: aqua;
+}
+.user-age input{
+    width: 87%;
+    
+}
+::placeholder{
+    color: rgb(154, 71, 12); 
+}
+.user-bio{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: 100%;
+    padding-left: 15px;
+    color: aqua;
+}
+.form-footer{
+    height: 8%;
+    padding-left: 15px;
+    padding-right: 19px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(235, 226, 226);
+}
+.form-footer button{
+    width: 100px;
+    height: 35px;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}

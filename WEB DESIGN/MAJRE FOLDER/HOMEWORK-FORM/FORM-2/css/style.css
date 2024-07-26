@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+form{
+    width: 450px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+h3{
+    text-transform: uppercase;
+    color: rgb(11, 112, 143);
+}
+input{
+    border: 1px solid black;
+}
+.user1{
+    width: 420px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.user1 input{
+    height: 30px;
+    width: 195px;
+    padding-left: 10px;
+}
+.user2{
+    width: 420px;
+    height: 30px;
+    display: flex;
+}
+.user2 input{
+    height: 30px;
+    width: 420px;
+    padding-left: 10px;
+}
+.user3{
+    width: 420px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.user3 > .radio{
+    padding-left: 10px;
+}
+.user3 > .checkbox{
+    padding-left: 10px; 
+}
+.user4{
+    width: 420px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.user4 button{
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+}
+.user-select{
+    width: 420px;
+    height: 30px;
+    display: flex;
+    align-items: center; 
+}
+.user-select select{
+    height: 30px;
+    width: 420px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+.buttom button{
+    height: 40px;
+    width: 420px; 
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgb(11, 112, 143);
+}

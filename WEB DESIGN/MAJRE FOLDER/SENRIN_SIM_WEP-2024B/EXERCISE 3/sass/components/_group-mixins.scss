@@ -1,0 +1,10 @@
+
+@mixin text-cetered {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-fomated {
+    font-weight: bold;
+    font-size: 25px;
+}

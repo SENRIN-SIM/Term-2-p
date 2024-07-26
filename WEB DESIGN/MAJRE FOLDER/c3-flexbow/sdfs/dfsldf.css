@@ -1,0 +1,14 @@
+body{
+    border: 1px;
+}
+div {
+    width: 400px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border: 1px solid;
+}
+div:nth-of-type(2){
+    width: 240px;
+    margin-left: 20px;
+    margin-top: 5px;
+}

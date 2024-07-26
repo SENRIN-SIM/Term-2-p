@@ -1,0 +1,19 @@
+
+label{
+    text-transform: uppercase;
+}
+input{
+    background-color: aqua;
+    border: 0ch;
+    height: 20px;
+
+}
+form:nth-of-type(2) {
+    color: rgb(24, 36, 32);
+}
+*{
+    background-color: grey;
+} 
+form,label,button{
+    background-color: bisque;
+}

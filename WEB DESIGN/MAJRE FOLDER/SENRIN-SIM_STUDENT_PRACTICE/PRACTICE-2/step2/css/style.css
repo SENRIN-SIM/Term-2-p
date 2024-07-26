@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(195, 188, 188);
+}
+.nav_bottom{
+    display: flex;
+    height: 50%;
+   background-color:  aliceblue;
+}
+.nav_bottom_left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1.6;
+}
+.nav_bottom_left ul{
+    display: flex;
+    gap: 20px;
+}
+.nav_bottom_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
+    flex: 1;
+}
+ul li{
+    padding: 10px;
+}

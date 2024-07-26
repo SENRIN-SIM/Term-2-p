@@ -1,0 +1,17 @@
+body{background:gray;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{color: white;
+    text-decoration: underline;
+    }
+    p{font-size: large;
+    color: orange;
+    }
+    div{
+        border: 1px solid white;
+        margin-top: 10px;
+        padding: 10px;
+        color: white;
+        font-size: large;
+    }
+    

@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.3fr 0.7fr 3fr 0.8fr;
+    grid-template-areas: 
+        'nav'
+        'header'
+        'main'
+        'footer'
+    ;
+}
+nav{
+    grid-area: nav;
+    background-color: #eaac88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    grid-area: header;
+    background-color: #b56b6f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    grid-area: main;
+    background-color: #B56576;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+        'sidebar-left main-center sidebar-right'
+    ;
+    column-gap: 5px ;
+}
+.sidebar-left{
+    grid-area: sidebar-left;
+    background-color: #955361;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-center{
+    grid-area: main-center;
+    background-color: #6d597a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    grid-gap: 5px;
+}
+.box{
+    background-color: #4a3c53;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+span{
+    background-color: black;
+    color: white;
+    padding: 0px 6px 0px 6px;
+    border-radius: 5px 0px 0px 0px;
+}
+.sidebar-right{
+    grid-area: sidebar-right;
+    background-color: #b56575;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+.benner-top{
+    background-color: #905c68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.benner-bottom{
+    background-color: #794d56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(101, 22, 22);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "footer-left footer-center footer-right"
+    ;
+}
+.footer-left{
+    grid-area: footer-left;
+    background-color: #355070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-center{
+    grid-area: footer-center;
+    background-color: #293e28;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-right{
+    grid-area: footer-right;
+    background-color: #1b293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

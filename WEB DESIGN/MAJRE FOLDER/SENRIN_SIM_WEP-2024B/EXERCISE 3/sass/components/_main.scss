@@ -1,0 +1,13 @@
+@import "_variable";
+@import "_group-mixins";
+main,
+footer {
+  display: grid;
+  @include text-cetered;
+  @include text-fomated;
+}
+main {
+    background: $main-bg;
+    grid-area: main;
+  }
+  

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <div class="contact-us">
+        <form action="form">
+            <div class="container">
+                <h1>Register Now</h1>
+                <div class="username">
+                    <label for="username">Username</label>
+                    <input type="text" name="firstname" placeholder="First Name">
+                    <input type="text" name="lastname" placeholder="Last Name">
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="passwords">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="confirm password" placeholder="Confirm Password">
+                </div>
+                <div class="gender">
+                    <label for="gender">Gender:</label>
+                    <div class="genders">
+                        <input type="radio" name="gender" id="gender" value="male"> Male
+                        <input type="radio" name="gender" id="gender" value="female"> Female
+                        <input type="radio" name="gender" id="gender" value="other"> Other
+                    </div>
+                </div>
+                <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter your address:"></textarea>
+                <div class="tell-choice">
+                    <div class="phone">
+                        <label for="tell">Phone Number</label>
+                        <input type="tel" name="tell" placeholder="91-0615697432">
+                        <select id="pets" name="pets">
+                            <label for="choic"> Choose a pet</label>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="fish">Fish</option>
+                            <option value="bird">Birds</option>
+                            <option value="rabbit">Rabbit</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="button">
+                    <button>Pay Now</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

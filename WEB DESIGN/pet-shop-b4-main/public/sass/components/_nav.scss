@@ -1,0 +1,93 @@
+@import "_variable";
+@import "_groupmixins";
+@import "../main";
+
+nav {
+    width: $width;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    @include space;
+    padding: $nav-padding;
+
+    @include responsive(tablet) {
+        height: 80px;
+    }
+
+    @include responsive(phone) {
+        height: 50px;
+        padding: 2px 20px;
+    }
+
+    .menu {
+        @include centersnojus;
+    }
+
+    ul {
+        display: flex;
+
+        li {
+            padding: $size+10;
+            font-size: $size;
+            font-weight: bold;
+
+            @include responsive(tablet) {
+                padding: $size;
+            }
+
+            @include responsive(phone) {
+                padding: $size - 10;
+            }
+
+            a {
+                color: $text-color;
+                text-transform: uppercase;
+
+                @include responsive(phone) {
+                    text-transform: capitalize;
+                }
+            }
+
+            a:hover {
+                color: $main-color;
+            }
+
+        }
+        
+    }
+
+    form {
+        @include centersnojus;
+        @include responsive(phone) {
+            display: none;
+        }
+        input {
+            margin-left: auto;
+            width: 50%;
+            padding: $size - 5;
+            font-size: $size;
+            border-radius: 20px 0px 0px 20px;
+            background-color: #dedbdb;
+            border: none;
+            color: $text-color;
+            @include responsive(tablet) {
+                width: 100%;
+            }
+    
+            ::placeholder {
+                font-size: 20px;
+            }
+        }
+    
+        .material-icons {
+            font-size: 32px;
+            border-radius: 0px 20px 20px 0px;
+            background-color: #c5c5c2;
+            padding: $size - 7.5;
+            color: $main-color;
+        }
+    }
+ 
+}

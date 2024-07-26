@@ -1,0 +1,508 @@
+@import "_main";
+
+* {
+    @include univer;
+}
+
+body {
+    @include body;
+    font-size: 20px;
+}
+
+@import "./components/nav";
+
+.menu ul li:nth-child(3) a {
+    color: $main-color;
+    border-bottom: 5px solid;
+
+}
+
+
+header {
+    background-color: $bg-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    @include responsive('phone'){
+        padding: 0px 20px;
+    }
+
+    .header-left {
+        position: relative;
+        display: inline-block;
+        padding-top: 50px;
+        font-size: 30px;
+        color: $main-color;
+        @include responsive('tablet'){
+            position: absolute;
+            width: 50%;
+            font-size: 25px;
+            padding: 20px 0px;
+        }
+        @include responsive('phone'){
+            font-size: 15px;
+            font-weight: normal;
+            padding-top: 10px;
+        }
+    }
+    button {
+        padding: 10px 50px;
+        background-color: $main-color;
+        color: #fff;
+        border: none;
+        font-size: 20px;
+        @include responsive('phone'){
+            padding: 5px 30px;
+        }
+    }
+
+    .header-left-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 500px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        @include responsive('phone'){
+            min-width: 300px;
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .header-right{
+        img{
+            width: 100%;
+        }
+        @include responsive('tablet'){
+            width: 100%;
+            padding-top: 10px;
+        }
+        @include responsive('phone'){
+            width: 100%;
+            padding-top: 10px;
+        }
+    }
+
+    .header-left:hover {
+        .header-left-content {
+            display: block;
+            font-size: 20px;
+            color: black;
+        }
+    }
+
+}
+
+main {
+    background-color: #fff;
+
+    .about-us01 {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 50px;
+
+        @include responsive('phone') {
+            flex-direction: column;
+            padding: 0px 20px;
+        }
+
+        .main_left {
+            width: 50%;
+            padding: 10px 0px;
+
+            @include responsive('tablet') {
+                width: auto;
+            }
+
+            @include responsive('phone') {
+                padding: 25px 0px;
+            }
+        }
+
+        h1 {
+            color: $main-color;
+
+            @include responsive('phone') {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            font-size: 20px;
+
+            @include responsive('tablet') {
+                font-size: 20px;
+            }
+
+            @include responsive('phone') {
+                font-size: 20px;
+            }
+        }
+
+        .main_right {
+            text-align: center;
+            padding: 50px 0px;
+
+            img {
+                width: 65%;
+                border-radius: 50%;
+                border: 8px solid $main-color;
+
+                @include responsive('tablet') {
+                    border: 7px solid $main-color;
+                    margin-top: 100px;
+                }
+
+                @include responsive('phone') {
+                    margin-top: 1px;
+                    width: 70%;
+                }
+            }
+
+            h3 {
+                color: #6C3838;
+
+                @include responsive('phone') {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .about-us02 {
+        padding: 0px 50px;
+        @include responsive('phone'){
+            padding: 0px 20px;
+        }
+        .section-top {
+            text-align: center;
+            padding: 20px;
+            @include responsive('phone'){
+                padding: 5px;
+            }
+            h1 {
+                color: $main-color;
+                font-weight: bold;
+                padding: 10px;
+
+                @include responsive('phone') {
+                    font-size: 22px;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .section-bottom {
+            display: flex;
+            justify-content: space-between;
+
+            @include responsive('phone') {
+                width: auto;
+                flex-wrap: wrap;
+            }
+
+            .section-img {
+                width: 25%;
+                padding: 20px 0px;
+                text-align: center;
+
+                @include responsive('tablet') {
+                    width: 31%;
+                }
+
+                @include responsive('phone') {
+                    width: auto;
+                    flex-wrap: wrap;
+                }
+
+                img {
+                    width: 100%;
+                    box-shadow: $main-color 5px 5px 2px 2px;
+
+                    @include responsive('phone') {
+                        width: 70%;
+                    }
+                }
+
+                h3 {
+                    padding: 10px;
+                    color: #6C3838;
+
+                    @include responsive('tablet') {
+                        font-size: 8px;
+                    }
+
+                    @include responsive('phone') {
+                        font-size: 15px;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
+
+                    @include responsive('phone') {
+                        font-size: 9px;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .aside {
+        background-color: $main-color;
+        color: #fff;
+        padding: 20px 0px;
+
+        @include responsive('phone') {
+            width: auto;
+            flex-wrap: wrap;
+            
+        }
+    }
+
+    .aside-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        font-size: 20px;
+
+        @include responsive('phone') {
+            flex-wrap: wrap;
+            padding: 0px 20px;
+        }
+
+        .aside-top_left {
+            width: 30%;
+            @include responsive('phone') {
+                width: 40%;
+                font-size: 21px;
+            }
+        }
+
+        .aside-top_right {
+            width: 70%;
+
+            @include responsive('phone') {
+                font-size: 20px;
+                width: auto;
+            }
+        }
+    }
+
+    .aside-center {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+
+        @include responsive('phone') {
+            padding: 0px 20px;
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+        }
+
+        .center_left {
+            width: 70%;
+            @include responsive('phone') {
+                font-size: 20px;
+                width: auto;
+            }
+
+        }
+
+        .center_right {
+            width: 30%;
+            display: flex;
+            justify-content: end;
+        }
+
+    }
+
+    .aside-bottom {
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+
+        @include responsive('phone') {
+            flex-wrap: wrap;
+            width: auto;
+            padding: 15px 20px;
+            :nth-child(2){
+                display: none;
+            }
+        }
+        
+
+        .group-img {
+            width: 25%;
+            background: thistle;
+
+            @include responsive('phone') {
+                width: 48%;
+                flex-wrap: wrap;
+            }
+
+            img {
+                width: 100%;
+                border: 5px solid #fff;
+                border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+
+// ================================
+
+.value {
+    padding: 20px 50px;
+    @include responsive('tablet'){
+        padding: 10px 30px;
+    }
+    @include responsive('phone'){
+        padding: 10px 20px;
+    }
+    h2{
+        color:$main-color;
+        text-transform: uppercase;
+        font-size: 30px;
+        text-align: center;
+    }
+    .card-box {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        @include responsive('tablet'){
+            text-align: start;
+        }
+        @include responsive('phone'){
+            text-align: start;
+            padding-bottom: 10px;
+        }
+        .box{
+            width: 45%;
+            background-color:$text-button;
+            box-shadow: $main-color 5px 5px 2px 2px;
+            border-radius: 15px;
+            padding: 23px;
+            margin: 15px;
+            @include responsive('tablet'){
+                width: 43%;
+            }
+            @include responsive('phone'){
+                width: 100%;
+            }
+            
+            h4{
+                padding: 30px ;
+                border-radius: 10px;
+                color: $text-button;
+                background: $main-color;
+                text-transform: uppercase;
+                text-align: center;
+                @include responsive('tablet'){
+                    font-size: 20;
+                    padding: 20px ;
+                }
+                @include responsive('phone'){
+                    font-size: 18px;
+                    padding: 15px ;
+                }
+            }
+
+            p {
+                padding: 60px 20px 60px 20px;
+                @include responsive('tablet'){
+                    padding: 30px 10px;
+                    
+                }
+                @include responsive('phone'){
+                    padding: 20px 5px;
+                    font-size: 17px;
+                }
+            }
+
+        }
+    }
+}
+
+.community {
+    padding: 0px 50px;
+    background-color: #ffff;
+    text-align: center;
+    @include responsive('tablet'){
+        padding: 10px 30px;
+    }
+    @include responsive('phone'){
+        padding: 10px 20px;
+        text-align: start;
+    }
+    h2{
+        color:$main-color ;
+        padding: 20px;
+        text-transform: uppercase;
+        font-size: 30px;
+
+        @include responsive('phone') {
+            padding: 5px;
+        }
+    }
+
+    p {
+        padding-left: 10px;
+        @include responsive('tablet') {
+            font-size: 18px;
+        }
+        @include responsive('phone') {
+            padding-left: 10px;
+        }
+    }
+
+    .img {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        @include responsive('phone'){
+            flex-direction: column;
+            justify-content: center;
+            text-align: start;
+        }
+        .card-img{
+            padding: 20px 0px ;
+            @include responsive('phone'){
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            p{
+                padding: 20px 10px ;
+                @include responsive('tablet'){
+                    padding: none;
+                }
+                @include responsive('phone'){
+                    padding-left: 20px;
+                }
+            }
+            img{
+                width: 90%;
+                @include responsive('tablet'){
+                    width: 80%;
+                }
+                @include responsive('phone'){
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@import "./components/footer";

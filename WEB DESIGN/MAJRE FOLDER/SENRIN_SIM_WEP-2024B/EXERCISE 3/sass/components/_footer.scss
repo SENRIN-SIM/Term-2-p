@@ -1,0 +1,11 @@
+@import "_variable";
+@import "_group-mixins";
+footer {
+    display: grid;
+    @include text-cetered;
+    @include text-fomated;
+  }
+footer {
+    background:$footer-bg;
+    grid-area: footer;
+  }

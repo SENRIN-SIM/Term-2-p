@@ -1,0 +1,12 @@
+@import "_variable";
+@import "_group-mixins";
+footer {
+  display: grid;
+  @include text-cetered;
+  @include text-fomated;
+}
+
+header {
+    background: $herder-bg;
+    grid-area: header;
+  }

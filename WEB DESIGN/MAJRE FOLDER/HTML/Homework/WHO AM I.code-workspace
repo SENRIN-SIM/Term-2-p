@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../WHO AM I"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../SENRIN_SIM-C1-S3-LIST-PRACTICE"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML"
+	}
+}

@@ -1,0 +1,31 @@
+
+@import "_variable";
+@import "_group-maxing";
+// $number: 1;
+
+@for $i from 1 through 5 {
+    .dot:nth-child(#{$i}){
+        // $size: 10px * $i;
+        width: $size * $i;
+        height: $size * $i;
+        gap: $i;
+        border-radius: 50%;
+        background-color: $lightColor;
+    }
+}
+@for $i from 6 through 10 {
+    .dot:nth-child(#{$i}){
+        // $size: 10px *(10 - $i);
+        width: $size *(10 - $i);
+        height: $size *(10 - $i);
+        gap: $i;
+        border-radius: $border-radius * 1%;
+        background-color: $lightColor;
+    }
+}
+body {
+    @include center;
+}
+.main {
+    @include center-main;
+}

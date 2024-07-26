@@ -1,0 +1,15 @@
+body{background:gray;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+div{
+    border: 1px solid white;
+     background: white;
+     margin-top: 10px;
+     padding: 10px;
+    color: teal;
+     font-weight: 300;
+ }
+ 
+ div p{
+    color: black;
+ }   

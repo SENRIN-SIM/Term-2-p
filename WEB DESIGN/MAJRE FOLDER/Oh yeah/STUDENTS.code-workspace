@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../MAJRE FOLDER/STUDENTS"
+		},
+		{
+			"path": "../MAJRE FOLDER/HYPERLINK - Student"
+		},
+		{
+			"path": "../MAJRE FOLDER/New folder"
+		},
+		{
+			"path": "../CSS SELECTER"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Oh yeah"
+	}
+}

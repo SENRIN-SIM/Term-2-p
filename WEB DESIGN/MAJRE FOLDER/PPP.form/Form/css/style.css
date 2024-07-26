@@ -1,0 +1,39 @@
+*{
+    padding: 8px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(213, 172, 179);
+}
+form{
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: rgb(101, 101, 172);
+    color: white;
+}
+h1{
+    margin-left: 14px
+}
+.top{
+    display: flex;
+    flex-direction: column;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+.button button{
+    width: 20%;
+    height: 35px;
+    border-radius: 10px;
+}

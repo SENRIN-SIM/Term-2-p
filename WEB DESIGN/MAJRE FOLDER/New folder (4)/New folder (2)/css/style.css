@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0%;
+
+}
+nav{
+    background-color: grey;
+    text-align: center;
+    flex: 0.4;
+}
+header{
+    background-color: greenyellow;
+    text-align: center;
+    flex: 1;
+}
+.container{
+    background-color: green;
+    flex: 4;
+    display: flex;
+}
+.main-box{
+    background-color: aquamarine;
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.box{
+    width: 49%;
+    background-color: aliceblue;
+    border: 1px solid darkcyan;
+}
+aside{
+    background-color: azure;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+}
+.side-box{
+    flex: 1;
+    border: 1px solid yellow;
+}
+section{
+    background-color: rgb(39, 38, 37);
+    flex: 1.5;
+    display: flex;   
+}
+.section-box{
+    flex: 1;
+    border: 1px solid rgb(189, 13, 43);
+}
+footer{
+    background-color: gold;
+    flex: 2;
+    text-align: center;
+}
+.box,
+.side-box,
+.section-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}

@@ -1,0 +1,50 @@
+/* p,button,h1,a{
+    color: red;
+} */
+/* body{
+    color: brown;
+}
+ul{
+    font-size: 29px;
+} */
+/* div ul{
+    list-style: none;
+    color: blue;
+} */
+/* div, ul{
+    color: black;
+} */
+/* div>ul{
+    color: yellow;
+}
+p{
+    color: pink;
+    background-color: aquamarine;
+} */
+/* div ul li:nth-child(1){
+    color: red;
+}
+div ul li:nth-child(2){
+    color: blue;
+}
+div ul li:nth-child(3){
+    color: pink;
+} */
+/* div +ul li{
+    list-style: none;
+    color: pink;
+} */
+[href]{
+    text-decoration: none;
+}
+[type="text"]{
+    border: 2px solid red;
+    padding: 10px;
+}
+[type="password"]{
+    border: 2px solid red;
+    padding: 10px;
+}[type="date"]{
+    border: 2px solid red;
+    padding: 10px;
+}

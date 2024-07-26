@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header{
+  width: 40%; 
+  height: 60vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  margin: auto;
+  background-color: rgb(32, 53, 82);
+}
+.top{
+    display: flex;
+    width: 80%;
+    height: 10%;
+    background-color: aqua;
+}
+.top_left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_left  button  {
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    color: white;
+}
+.top_right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top_right button{
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    color: white;
+}
+.section{
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+main{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.main_top{
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+.main_top input{
+    width: 50%;
+    height: 50%;
+} 
+.main_center{
+    flex: 1;
+}
+.main_center input{
+    width: 100%;
+    height: 50%;
+}
+.main_botton{
+    flex: 1;
+}
+.main_botton input{
+    width: 100%;
+    height: 50%;
+}
+.bottom{
+    width: 80%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    color: white;
+}

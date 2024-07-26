@@ -1,0 +1,16 @@
+@import 'head';
+
+@mixin footer{
+    background-color: black;
+}
+h1{
+    font-size: small;
+    width: 200%;
+    height: 200%;
+    background-color: aquamarine;
+}
+h2{
+    background-color: aliceblue;
+    @include footer
+ 
+}

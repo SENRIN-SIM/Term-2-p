@@ -1,0 +1,83 @@
+*{
+    padding: 0;margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+main{
+    width: 1350px;
+    display: flex;
+    background-color: aliceblue;
+}
+.main-right{
+    width: 330px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-right-top{
+    height: 260px;
+    width: 290px;
+    margin-top: 13px;
+}
+.main-right-top h3{
+    height: 30px;
+}
+.sponsore{
+    display: flex;
+}
+.sponsore i{
+    font-size: 40px;
+}
+.sponsore-right{
+    padding-top: 10px;
+}
+.sponsore img{
+    width: 227px;
+    height: 115px;
+    border-radius: 20px;
+}
+.main-right-center{
+    height: 100px;
+    width: 290px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.gift{
+    display: flex;
+}
+.gift i{
+    padding-right: 15px;
+}
+.main-right-bottom{
+    height: 250px;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+}
+.main-right-bottom-top{
+    display: flex;
+    justify-content: space-between;
+}
+.main-right-bottom-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.list{
+    display: flex;
+    height: 35px;
+    align-items: center;
+}
+.list i{
+    font-size: 35px;
+    color: pink;
+    padding-right: 15px;
+}
